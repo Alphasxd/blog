@@ -1,0 +1,54 @@
+title: Debug The World # The title of the blog
+author: Sheldon # Your name
+email: alphasxd@outlook.com # your email shown in the footer
+url: https://alphasxd.pages.dev # this is your site's root address.
+description: > # this means to ignore newlines until "show_excerpts:"
+  Software | Code | Academic | Life
+favicon: "./favicon.ico" # set the favicon of the site
+show_excerpts: false # set to true to show excerpts on the homepage
+google_analytics: G-E9RDYFK5CS # set the google analytics id to activate tracking
+
+# Moving date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+moving:
+  avatar_url: "https://gitlab.com/Sh3ldon/MyPic/-/raw/main/pictures/2023/11/11_20_1_5_bart.png" # avatar in about page
+  about_you: 未曾生我誰是我，生我之時我是誰。 # short description about you in about page
+  date_format: "%b %d" # date format of posts in home page
+  back_to: "Home" # In the post page, you have a back button above the title, you can custom the text by yourself.
+
+  # generate social links in about page.
+  social_links:
+    # twitter:
+    github: Alphasxd
+    rss: RSS
+    # dribbble:
+    # facebook:
+    # flickr:
+    # instagram:
+    # linkedin:
+    # pinterest:
+    # youtube:
+    # youtube_channel:
+    # youtube_channel_name:
+    # telegram:
+    # googleplus:
+    # microdotblog:
+    # reddit:
+
+    # Mastodon instances
+    # mastodon:
+    # - username:
+    #   instance:
+    # - username:
+    #   instance:
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+    - "*.json"
+    - "Gemfile*"
+    - README.md
+    - LICENSE
