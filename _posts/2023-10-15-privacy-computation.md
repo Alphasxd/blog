@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 🔖 隐私计算 - 肖臻(2021云栖大会)
+title: 🔖 隐私计算
 categories: academic
 ---
 
