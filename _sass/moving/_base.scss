@@ -184,6 +184,7 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.85);
+  font-family: 'Fira Code';
 }
 
 pre {
