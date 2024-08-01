@@ -98,7 +98,7 @@ lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ip
 
 ### Images 
 
-![bingbujiandan](https://imag3s.pages.dev/file/f01d07e0e392d0721d3db.png)
+<img src="https://imag3s.pages.dev/file/e76780329950203e594e9.jpg" width="60%">
 
 
 ### Styles
