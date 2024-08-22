@@ -49,7 +49,7 @@ Cookies 自身就有非常多的玩儿法，抛开那些权限相关的内容，
 
 > 我们完全可以实现一个 Web 框架，它使用 LocalStorage 来存储 Session-Data / Session-ID，在发起 XHR 请求时，主动将其加进 Header 内（甚至 URL 内），服务端则从相应位置读取信息完成业务逻辑，在这套框架体系内这是完全没有问题的。
 
-实际上，许多框架都支持 Session with out Cookies 的实现，虽然存在各种各样的小问题或限制，但是确实可用。
+实际上，许多框架都支持 Session without Cookies 的实现，虽然存在各种各样的小问题或限制，但是确实可用。
 因此，需要再次强调：对于 Session 机制来说，Session-Data / Session-ID 才是本体，Cookies 只是一个**存储容器**，这二者**没有捆绑关系**。
 
 ## Authentication
@@ -149,7 +149,7 @@ HMACSHA256(
 
 ## Session 和 JWT 的关系是什么？
 
-有一篇蛮有名的文章：[Stop using JWT for sessions](http://cryto.net/%7Ejoepie91/blog/2016/06/13/stop-using-jwt-for-sessions/) ,作者提到的那些将 JWT 用做 Session 实现的人，实际上说的都是 **Client Side Session**
+有一篇蛮有名的文章：[Stop using JWT for sessions](http://cryto.net/%7Ejoepie91/blog/2016/06/13/stop-using-jwt-for-sessions/)，作者提到的那些将 JWT 用做 Session 实现的人，实际上说的都是 **Client Side Session**
 那么问题变的比较清晰了：
 
 - JWT 只是一种处理数据的手法，它通过签名保证了信息的不可篡改，特定的格式也具备其它一些小特性。
