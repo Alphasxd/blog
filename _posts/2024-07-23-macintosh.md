@@ -146,7 +146,7 @@ iTerm2 > Settings > Profile > Colors > Color Presets > Import
 
 > 🧛🏻‍♂️ One [theme](https://github.com/dracula/dracula-theme){:target="_blank"}. All platforms. 
 
-![dracula](https://camo.githubusercontent.com/d1b246c13a7bbb6134ca4eed5ed9a9a4408950fb1a60fa698450eaa20925fd58/68747470733a2f2f64726163756c617468656d652e636f6d2f696d616765732f64726163756c612e676966)
+![Dracula](https://draculatheme.com/images/dracula.gif)
 
 #### 字体配置
 
