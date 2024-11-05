@@ -98,7 +98,7 @@ lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ip
 
 ### Images 
 
-<img src="https://imag3s.pages.dev/file/e76780329950203e594e9.jpg" width="60%">
+<img src="https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051855765.jpeg" width="60%">
 
 
 ### Styles
