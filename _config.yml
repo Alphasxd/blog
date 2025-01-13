@@ -10,7 +10,7 @@ show_excerpts: false # set to true to show excerpts on the homepage
 # Moving date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 moving:
-  avatar_url: "https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051856197.png" # avatar in about page
+  avatar_url: "https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/8c2fc4999cbbd957b00d91066296ed55.png" # avatar in about page
   about_you: 未曾生我誰是我，生我之時我是誰。 # short description about you in about page
   date_format: "%b %d" # date format of posts in home page
   back_to: "Home" # In the post page, you have a back button above the title, you can custom the text by yourself.

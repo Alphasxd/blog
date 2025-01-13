@@ -22,11 +22,11 @@ categories: academic
 - 零知识证明
 - 可信执行环境
 
-![image-20231014204944391](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852383.png)
+![image-20231014204944391](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/5f3fdd08a0c1e2473f34f326af26afa5.png)
 
 ## 隐私计算的潜在需求
 
-![image-20231014205136866](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852385.png)
+![image-20231014205136866](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/6e568a365134ce18277cf7a9e0ca65a7.png)
 
 ## 隐私计算的前进与挑战
 
@@ -42,7 +42,7 @@ categories: academic
 - 隐私计算的认知度，认可度仍然不足，商业模式仍然在探索中
 - 隐私计算的学习成本、设备成本较高 
 
-![image-20231014205507032](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852386.png)
+![image-20231014205507032](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/a73334f2260bd0bd344d4ded9be5a754.png)
 
 > 目前阶段的隐私计算只能是说实现了某些特定场景下，
 >
@@ -54,7 +54,7 @@ categories: academic
 
 可以使分散的各参与方在不向其他参与者泄漏隐私数据的前提下，协作进行机器学习的模型训练，它是人工智能领域保护数据隐私性的方法，使得各方的私密数据在不出本地的情况下，能够把各方数据联合在一起共同训练一个机器学习模型，训练模型、推理模型都可以综合利用各方的数据，想法是非常好的
 
-![image-20231014205915467](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852387.png)
+![image-20231014205915467](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/9b79b8f7f91ee5d637616cc0a43e6b7e.png)
 
 **联邦学习中的问题**
 
@@ -64,23 +64,23 @@ categories: academic
 
 隐私泄漏：联邦学习已经采用了很好的方法来防止泄漏隐私，让训练数据不离开本地，但是通过此种措施就能保证数据不会泄漏吗？不一定。学术上是有一些争议的，上传的梯度信息其实可以用来反推出原始的训练数据，他们是相关的。虽然数据本身没有离开本地，但有关数据的信息还是汇聚到一个中央服务器里，仍然存在隐私泄漏的可能性。
 
-![image-20231014211724804](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852388.png)
+![image-20231014211724804](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/918ce0126ebbcb5e124b33c1d127bfc9.png)
 
 ## 安全多方计算
 
 姚氏百万富翁问题
 
-![image-20231014212103746](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852389.png)
+![image-20231014212103746](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/bb2fbb16fab861d62ab04265fc16ed9e.png)
 
 姚启智，两个百万富翁在街上遇到了，想要比一比谁更有钱，他们知道自己有多少钱，但是并不想透露出去，在双方不透露各有多少钱的情况下，比出谁更有钱。
 
 假设没有可信第三方，安全多方计算的本质：既要保证各个参与方的数据隐私性，又要合在一起计算一个约定的函数
 
-![image-20231014212527955](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852390.png)
+![image-20231014212527955](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/dbd57f83c03c233f820e6f0c64e7e270.png)
 
 跟联邦学习有一定的相似性，但是不完全一样，这是一个形式化的描述，我们假设有n个参与方，他们各自有数据 X1，X2，，，Xn，f是一个约定好的函数，假设所有的参与方都事先商量好了，我们要一起算这个函数f得到的结果是Y1，Y2，，，Yn。第一个参与方X1，他知道自己的输入X1，同时也能获得自己的输出Y1，但是他没有办法知道其他n-1个输入X2，，，Xn，也没有办法获得其他的输出Y2，，，Yn，这是用来实现隐私保护的，对比一下这个图跟联邦学习那个图，这个模式的去中心化程度更高一点。联邦学习其实是有一个中央服务器的，这个中央服务器应该说也不算是可信第三方。因为虽然参与方把梯度的更新反馈到中央服务器上，但是原始数据并没有送过去。然而安全多方计算在很多情况下可以做到不需要中央服务器，完全是P2P结构的。
 
-![image-20231015105305736](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852391.png)
+![image-20231015105305736](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/20b2955a2321aba620be440e0d6e090c.png)
 
 安全多方计算有很多实现相关的技术
 
@@ -90,13 +90,13 @@ categories: academic
 
 可以计算任意的约定的函数，功能很强大，但是效率很低，到目前为止，通用的安全多方计算在实际的应用中还是比较少的
 
-![image-20231015111633947](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852392.png)
+![image-20231015111633947](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/5f7f1eb9dfc3dcb06dbd05b4ab398504.png)
 
 **特定问题的安全多方计算：**
 
 为了计算某个具体功能，目前情况下有一些实际应用场景
 
-![image-20231015111822183](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852393.png)
+![image-20231015111822183](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/8d950c4dedc7b43417741f18a00e6746.png)
 
 ## 同态加密 Homomorphic Encryption
 
@@ -104,11 +104,11 @@ categories: academic
 
 第一个实现全同态加密算法的科学家：Craig Gentry，也就是数据可用不可见 ，我允许你使用我的数据，但这个数据具体是什么，不能告诉你
 
-![image-20231015112006304](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852394.png)
+![image-20231015112006304](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/06474344fd74bb14304c047d9f2e6d99.png)
 
 核心思想是利用设计的加密函数，能够保证先对这个数据，进行运算然后再加密，跟先对这个数据加密之后再运算是等价的
 
-![image-20231015112211093](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852395.png)
+![image-20231015112211093](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/6e0761262b7671c2000866151e4c80b2.png)
 
 同态加密的性质
 
@@ -116,7 +116,7 @@ categories: academic
 - 隐藏的性质 hiding property，加密后这个函数值很难反推出原始的输入值，只能用蛮力一个个的去试
 - 同态运算，最重要的性质，
 
-![image-20231015112650869](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852396.png)
+![image-20231015112650869](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/38b5efc44e72a051e6d8f71b2576bed8.png)
 
 分类
 
@@ -129,11 +129,11 @@ categories: academic
 
   图灵完备的全同态加密，复杂度太高
 
-![image-20231015113411063](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852397.png)
+![image-20231015113411063](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/2110417ce713d77874fe30cd00aa2aad.png)
 
 ## 零知识证明 
 
-![image-20231015114029504](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852398.png)
+![image-20231015114029504](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/249fd9b998e9aa01a604594244bcdca5.png)
 
 举例
 
@@ -141,11 +141,11 @@ categories: academic
 
 这样就在不透露密钥的情况下证明了我拥有对这个账户的私钥
 
-![image-20231015114153185](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852399.png)
+![image-20231015114153185](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/8e1a64675525afd16a1a0c5c0432d612.png)
 
 zk-SNARK: 简明非交互式零知识证明
 
-![image-20231015122108715](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852400.png)
+![image-20231015122108715](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/e024aefa5e24648a6c5392a5b769b454.png)
 
 **两个显著的特点**
 
@@ -156,7 +156,7 @@ Zcash
 
 谁给谁转账，转了多少钱，在zcash里是加密的，是不知道的
 
-![image-20231015123107688](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852401.png)
+![image-20231015123107688](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/0d270bddd47b4ce27a3c9057348649fb.png)
 
 Filecoin
 
@@ -164,7 +164,7 @@ zk-SNARK协议的最大规模的应用，filecoin网络里每天要产生几百�
 
 filecoin使用zk协议，只是用来实现它的共识机制的一部分，并没有用于用户的存储的数据
 
-![image-20231015123125099](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852402.png)
+![image-20231015123125099](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/537aecda323196dc5423818ba1d4b528.png)
 
 以太坊的智能合约里，也没有实现真正的隐私计算，以太坊的智能合约是图灵完备的，从理论上说也是一个很好的隐私计算的应用场景，因为智能合约的一些东西都是公开的，如果有一些隐私数据想通过智能合约进行计算，可以把这些隐私数据进行同态加密然后发到智能合约里，智能合约就负责用加密后的数据进行运算，然后把结果传给我，我再加密，智能合约可以扣掉我一部分coin。愿景非常美好，但是也没有实现，原因就是通用的同态加密技术和安全多方计算目前还没有真正的大规模应用。
 
@@ -174,23 +174,23 @@ filecoin使用zk协议，只是用来实现它的共识机制的一部分，并�
 
 系统层面的隐私计算技术，利用软硬件的方法构建一个隔离的安全区域，这个区域不论是存数据还是存程序，即使是本地的操作系统都没有权利擅自访问
 
-![image-20231015124521710](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852403.png)
+![image-20231015124521710](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/a5b79a44b43e7dec604957cf75acb198.png)
 
 最早跟隐私计算没有太直接的关系
 
 最早计算机的单机安全性就用到了，比如手机上的生物解锁，指纹或者面容，存在一个安全领域是比较好的，跟手机上的其他应用隔离开
 
-![image-20231015125002010](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852404.png)
+![image-20231015125002010](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/04ff7de023ed26fc42fa1826e328ed33.png)
 
 ## 隐私计算与区块链
 
 基于区块链和TEE的数据分析服务
 
-![image-20231015125242748](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852405.png)
+![image-20231015125242748](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/b2e91b70d72484c768debc50f004154f.png)
 
 基于区块链和MPC实现行业热点整合
 
-![image-20231015125219269](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852406.png)
+![image-20231015125219269](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/99e803d184b5c4f117df159019a851e4.png)
 
 ## 隐私计算的其他应用
 
@@ -202,7 +202,7 @@ filecoin使用zk协议，只是用来实现它的共识机制的一部分，并�
 
 联合营销
 
-![image-20231015125352858](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852407.png)
+![image-20231015125352858](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/1cd835e9738c13d5a7109078cce08a79.png)
 
 ## 隐私计算存在的问题
 
@@ -216,7 +216,7 @@ TEE的局限
 
 开发难度大
 
-![image-20231015125121186](https://jihulab.com/Alphasxd/pic/raw/main/2024/11/202411051852408.png)
+![image-20231015125121186](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/957fc290a9f5b10b1a36cc0f196c91aa.png)
 
 ## 观念混淆
 
