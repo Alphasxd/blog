@@ -42,6 +42,14 @@ categories: misc
 
 ### 允许任何来源
 
+首先在终端中执行以下命令：
+
+```bash
+sudo spctl --master-disable
+```
+
+然后在系统设置中找到“任何来源”选项：
+
 > 设置 > 隐私与安全性 > 安全性 选中 任何来源
 
 ![image-20240725114619572](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/1f9fc71730091a9e6f0ee3c155ddcf68.png)
@@ -51,6 +59,36 @@ categories: misc
 > 开发者未向 Apple 注册的 App，将看到一个警告对话框。
 
 ![image-20240724165016866](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/c0229efeb4bf95602ade17b403b05a6e.png)
+
+## 输入法设置
+
+### 移除 ABC 输入法
+
+**首先关闭 SIP**
+
+> M 系列的 Mac 需要在恢复模式下执行以下命令，然后重启
+
+```bash
+csrutil disable
+```
+
+> 接着在终端中执行以下命令：
+
+```bash
+sudo open ~/Library/Preferences/com.apple.HIToolbox.plist
+```
+
+> 在打开的文件中，选择 AppleEnableInputSources，找到 KeyboardLayout Name 为 ABC 的 item，整个删除掉，然后 `⌘ + S` 保存，点击文件的显示简介 - 勾选已锁定，最后重启电脑即可发现 ABC 输入法已经被删除，至此彻底解决了 Mac 上的 ABC 输入法莫名其妙变成默认输入法的问题。
+
+![](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/05/5994689b92e24924ad149b4bdc6a4374.png)
+
+### RIME
+
+聪明的输入法懂我心意
+
+  > 强烈推荐阅读我的另一篇文章[中州韵输入法配置指北](https://alphasxd.pages.dev/misc/2024/02/18/rime){:target="_blank"}
+
+![image-20240725125242124](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/7d28ee67b7001bd6625e7152dc0dfddc.png)
 
 ## Finder
 
@@ -314,13 +352,6 @@ Lightweight. Open source. No fluff.
 
 ![sc-sky](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/bc57cb525c17c749a780de178453c02c.png)
 
-### RIME
-
-聪明的输入法懂我心意
-
-  > 强烈推荐阅读我的另一篇文章[中州韵输入法配置指北](https://alphasxd.pages.dev/misc/2024/02/18/rime){:target="_blank"}
-
-![image-20240725125242124](https://pub-1f7966b8d1aa419d8595fea40c064c5c.r2.dev/2025/01/7d28ee67b7001bd6625e7152dc0dfddc.png)
 
 ## 其他(摸鱼利器)
 
