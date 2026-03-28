@@ -3,14 +3,11 @@ layout: default
 ---
 
 <div class="home">
-  <head>
-      <title>{{ site.title }}</title>
-  </head>
   <div class="home-title">
     <p class="home-heading">{{ site.title }}</p>
     <div class="home-sub-heading">
       {%- if site.description -%}
-      <a class="black-link" href="{{ site.url }}/about.html">
+      <a class="black-link" href="{{ "/about.html" | relative_url }}">
         {{- site.description | escape -}}
       </a>
       {%- endif -%}
@@ -18,7 +15,7 @@ layout: default
   </div>
 
   {%- if site.posts.size > 0 -%}
-  <ul class="post-list">
+  <div class="post-list">
       {% for post in site.posts  %}
       {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
       {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
@@ -48,6 +45,6 @@ layout: default
           {% endif %}
       {% endif %}
   {% endfor %}
-  </ul>
+  </div>
   {%- endif -%}
 </div>
